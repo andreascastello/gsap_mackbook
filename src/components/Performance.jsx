@@ -2,8 +2,9 @@ import React, { useRef } from 'react'
 import { performanceImages, performanceImgPositions } from '../../constants/index.js'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
-import ScrollTrigger from 'gsap/ScrollTrigger'
+
 import { useMediaQuery } from 'react-responsive'
+
 
 const Performance = () => {
 
