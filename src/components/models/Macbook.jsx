@@ -21,7 +21,7 @@ export default function MacbookModel(props) {
 
   const {color, texture} = useMacbookStore();
   const { nodes, materials, scene} = useGLTF('/models/macbook-transformed.glb'); 
-  const screen = useVideoTexture( texture );
+  const screen = useVideoTexture(texture || '/path/to/default-video.mp4');
 
   useEffect(() => {
     scene.traverse((child) => {
